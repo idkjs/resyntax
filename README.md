@@ -45,5 +45,5 @@ Which files do you want to delete?
 
 [npx resattributes](https://github.com/idkjs/resattributes)
 
-###[Share on Twitter...](https://twitter.com/share?text=Quickly+switch+between+ReasonML,+OCaml,+Rescript+syntaxes+in+your+project+https://github.com/idkjs/resyntax)
+###[Share on Twitter...](https://twitter.com/share?text=https://dev.to/idkjs/npx-resyntax-2574)
 
