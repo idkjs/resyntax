@@ -5,7 +5,7 @@
  Migrate files between `.re` `.rei` `.res` `.resi` `.ml` `.mli` syntaxes for [Ocaml](https://ocaml.org/),
  [ReasonML](https://git.io/reasonml) and [Rescript](https://rescript-lang.org/) syntaxes.
 
- Doesn't always work so check your output. Especiall for conversions from `.res` to `.re` or when convertion functors. See https://github.com/rescript-lang/syntax/issues/264;
+ Doesn't always work so check your output. Especially for conversions from `.res` to `.re` or when convertion functors. See https://github.com/rescript-lang/syntax/issues/264;
 
 ```sh
 npx resyntax
