@@ -1,36 +1,49 @@
-[![NPM version](https://img.shields.io/npm/v/resattributes.svg?style=flat)](https://www.npmjs.com/package/resattributes)
+[![NPM version](https://img.shields.io/npm/v/resyntax.svg?style=flat)](https://www.npmjs.com/package/resyntax)
 
-# [resattributes](https://git.io/resattributes)
+# [npx resyntax](https://git.io/resyntax)
 
-Generates or appends [ReasonML](https://git.io/reasonml) and [Rescript](https://rescript-lang.org/) `.gitattributes`.
+ Migrate files between `.re` `.rei` `.res` `.resi` `.ml` `.mli` syntaxes for [Ocaml](https://ocaml.org/),
+ [ReasonML](https://git.io/reasonml) and [Rescript](https://rescript-lang.org/) syntaxes.
+
+ Doesn't alwasy work so check your output. Especiall for conversions from `.res` to `.re` or when convertion functors. See https://github.com/rescript-lang/syntax/issues/264;
 
 ```sh
-npx resattributes
+npx resyntax
 ```
 
 Gets you:
 
+![image](./resyntax.png)
+
+<details>
+<summary>Summary</summary>
 ```sh
-# Tell github that .re and .rei files are Reason, sometimes recognized as C/C++
-*.re linguist-language=Reason 
-*.rei linguist-language=Reason
-*.res linguist-language=ReScript
-*.resi linguist-language=ReScript
+ [I] ➜ npx resyntax
+Which files do you want to migrate?
+1) REtoRes      4) RESItoREI   7) REtoML     10) Delete
+2) REItoResi    5) MLtoRE      8) REItoMLI   11) Cancel
+3) REStoRE      6) MLItoREI    9) REStoRe    12) Delete
+Which files do you want to delete?
+1) .re
+2) .rei
+3) .res
+4) .resi
+5) .ml
+6) .mli
+7) None
+8) Exit
+#?
 ```
+</details>
 
-![image](./attributes.png)
 
+### Other Tools
 
-See also:
+[npx bsconfig.json](https://git.io/bsconfig.json)
 
-[bsconfig.json](https://git.io/bsconfig.json)
+[npx resgitignore](https://github.com/idkjs/resgitignore)
 
-[resgitignore](https://github.com/idkjs/resgitignore)
+[npx resattributes](https://github.com/idkjs/resattributes)
 
-[mlxre](https://github.com/idkjs/mlxre)
-
-[Share on Twitter...](https://twitter.com/share?text=Quickly+generate+a+bsconfig.json+file+ for+reasonml+and+rescript+projects!+https://github.com/idkjs/bsconfig.json)
-Inspired by [benawad/tsconfig.json](https://github.com/benawad/tsconfig.json)
-
-[Share on Twitter...](https://twitter.com/share?text=Quickly+add+reasonml+and+rescript+attributes+to+your+project+https://github.com/idkjs/resattributes)
+###[Share on Twitter...](https://twitter.com/share?text=Quickly+switch+between+ReasonML,+OCaml,+Rescript+syntaxes+in+your+project+https://github.com/idkjs/resyntax)
 
