@@ -208,7 +208,7 @@ REItoMLI() {
 run(){
     echo "Which files do you want to migrate?"
     # shellcheck disable=SC2039
-    select result in REtoRes REItoResi REStoRE RESItoREI MLtoRE MLItoREI REtoML REItoMLI REStoRe Delete Cancel Exit
+    select result in REtoRes REItoResi REStoRE RESItoREI MLtoRE MLItoREI REtoML REItoMLI Delete Cancel Exit
     do
         if [ "$result" = "Exit" ]; then
             echo "$result"
