@@ -1,6 +1,6 @@
 {
   "name": "resyntax",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Migrate files between .re .rei .res .resi .ml .mli extensions for ocaml, reasonml, bucklescript and rescript syntaxes",
   "main": "resyntax.sh",
   "bin": "resyntax.sh",
@@ -9,7 +9,9 @@
     "release:major": "changelog -M && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version major && git push origin && git push origin --tags",
     "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version minor && git push origin && git push origin --tags",
     "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch && git push origin && git push origin --tags",
-    "release": "npmpub"
+    "release": "npmpub",
+    "test": "echo \"Skip this step\"",
+    "github-release" : "GITHUB_TOKEN=$(cat ~/.github_token.txt) npmpub github-release-from-changelog"
   },
   "keywords": [
     "resyntax",
